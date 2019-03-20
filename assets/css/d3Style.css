@@ -2,6 +2,7 @@
   font-family: sans-serif;
   font-size: 16px;
   text-anchor: middle;
+  fill: grey;
 }
 
 .active {
@@ -28,6 +29,9 @@
   font-family: sans-serif;
   fill: #fff;
   text-anchor: middle;
+  font-size: 7px;
+  stroke: white;
+  stroke-width: 0.5;
 }
 
 .stateCircle {
@@ -52,6 +56,27 @@
   border-radius: 4px;
 }
 
+g.btn {
+  stroke: #fff;
+}
+.aText:hover {
+  text-decoration: underline;
+  fill: black;
+}
+
+.aText:active {
+  fill: black;
+  font-weight: bold;
+}
+
+.aText:focus {
+  fill: black;
+  font-weight: bold;
+}
+
+/* On mouse-over */
+.btn:hover {background: #eee;}
+
 /* Mobile Rules */
 @media screen and (max-width: 530px) {
   .stateText {
@@ -68,3 +93,4 @@
     font-size: 13px;
   }
 }
+
