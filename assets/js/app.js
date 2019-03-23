@@ -265,7 +265,7 @@ function makeResponsive() {
             .on("mouseout", toolTip.hide);
 
         //add labels to each circle        
-        circleTexts = chartGroup.selectAll("text")
+        circleTexts = chartGroup.selectAll()
             .data(totData)
             .enter().append("text").attr("class","stateText")
             .attr("x", d => xScale(d[xVal]))
